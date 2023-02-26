@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* <<<<<<>>>>>>>>##Colors##>><>>>>>>>>>>>>>>>> */
+
+  /* ### Primary */
+
+  --lightred: hsl(0, 100%, 67%);
+  --orangeyyellow: hsl(39, 100%, 56%);
+  --greenteal: hsl(166, 100%, 37%);
+  --cobaltblue: hsl(234, 85%, 45%);
+
+  /* ## Gradients */
+  --lightslateblue: hsl(252, 100%, 67%); /*(background)*/
+  --lightroyalblue: hsl(241, 81%, 54%); /*(background)*/
+
+  --violetblue: hsla(256, 72%, 46%, 1); /*(circle)*/
+  --persianblue: hsla(241, 72%, 46%, 0); /*(circle)*/
+
+  /*
+Use transparency to get the colour variations necessary
+ to match the design. Hint: look into using `hsla()`.
+  */
+
+  /* ### Neutral */
+
+  --white: hsl(0, 0%, 100%);
+  --paleblue: hsl(221, 100%, 96%);
+  --lightlavender: hsl(241, 100%, 89%);
+  --darkgrayblue: hsl(224, 30%, 27%);
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
