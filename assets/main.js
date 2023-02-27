@@ -8,11 +8,11 @@ fetch("../data.json")
     data.map((score) => {
       scoresDiv.innerHTML += `
             
-            <div className="score">
+            <div class="score">
             <img src=${score.icon} alt="" />
             
-            <p className="score_category">${score.category}</p>
-            <p className="score_goten">${score.score}<span> / 100</span></p>
+            <p class="score_category">${score.category}</p>
+            <p class="score_goten">${score.score}<span> / 100</span></p>
             </div>
             
             `;
@@ -21,5 +21,5 @@ fetch("../data.json")
     const average = Math.round(
       scoreArr.reduce((acc, currentVal) => acc + currentVal) / scoreArr.length
     );
-    total.innerHTML += `${average} <span>of 100</span>`;
+    total.innerHTML += `${average}<span>of 100</span>`;
   });
